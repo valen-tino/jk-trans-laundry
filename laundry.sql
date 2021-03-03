@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 02, 2021 at 10:04 AM
+-- Generation Time: Mar 03, 2021 at 06:14 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -44,9 +44,29 @@ CREATE TABLE `pakaian` (
 --
 
 INSERT INTO `pakaian` (`id`, `sp`, `colli`, `berat`, `code`, `franco`, `confrankert`, `penerima_barang`, `keterangan`) VALUES
-(1, 29630, 183, 6613, '', '', 0, 'Bp Yoseph', ''),
-(2, 1, 2, 3, '451194', 'Lunas', 0, 'Tino', ''),
-(3, 1, 232, 3, '451194', 'Lunas', 12999, 'Tino', 'Taisho adalah perusahaan ');
+(1, 29630, 183, 6613, '234432', 'Lunas', 30000, 'Bp Yoseph', 'Perusahaan Asal AS dengan'),
+(6, 3423, 323, 34, '24342', 'Lunas', 23332, 'ss', '32445'),
+(7, 32, 342, 3, '23443', 'Lunas', 23332, 'Linlin', 'dfskjsfdhlhdfsi');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3'),
+(2, 'Valentino', 'facd548e6ff9e43b4f47ae95f02b3346');
 
 --
 -- Indexes for dumped tables
@@ -59,6 +79,12 @@ ALTER TABLE `pakaian`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -66,7 +92,13 @@ ALTER TABLE `pakaian`
 -- AUTO_INCREMENT for table `pakaian`
 --
 ALTER TABLE `pakaian`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
