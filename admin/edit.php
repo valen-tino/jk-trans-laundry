@@ -16,7 +16,7 @@ if ($_SESSION['status'] != "login") {
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-5 align-self-center">
-                <h5 class="page-title">Tambah</h5>
+                <h5 class="page-title">Edit</h5>
             </div>
             <div class="col-7 align-self-center">
                 <div class="d-flex align-items-center justify-content-end">
